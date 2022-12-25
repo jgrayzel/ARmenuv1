@@ -5,13 +5,262 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Vanilla JavaScript App</title>
+  <title>AR Menu</title>
+
+  <style>
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+    
+    body {
+      background-color: lightslategray;
+    }
+
+    table{
+      font-family: arial, sans-serif;
+      
+    }
+   
+
+    th, td {
+     
+      border-radius: 10px;
+      text-align: left;
+      
+      border-collapse: collapse;
+
+    }
+
+    tr{
+      text-align: left;
+      border-collapse: collapse;
+    }
+    
+    </style>
 </head>
 
 <body>
+ 
+  <script>
+    let agent = navigator.platform;
+  </script>
+
   <main>
-    <h1>Vanilla JavaScript App</h1>
+   <!-- <h1>Demo Restaurant - J & J Bistro</h1> -->
+    <img src="https://armenu.blob.core.windows.net/images/Restaurant Solid Small Cropped.png" alt="Restaurant Logo">
+    <hr>
+    
+    <table style="width:100%; padding: 5px;" >
+      <tr>
+        <th style=" border: 1px solid black;  text-align: center;"> <a href="#Apps">Appetizers</a></th>
+        <th style=" border: 1px solid black;  text-align: center;"> <a href="#Entrees">Entrees</a></th>
+        <th style=" border: 1px solid black;  text-align: center;"> <a href="#Sides">Sides</a></th>
+        <th style=" border: 1px solid black;  text-align: center;"> <a href="#Drinks">Drinks</a></th>
+      </tr>
+    </table>
+
+    <h2 id="Apps" style=font-family:arial,sans-serif;>Appetizers</h2>
+    <table style="width:100%;" >
+      <tr style="vertical-align: top; padding-top: 10px;">
+        <td style="width: 30%;" rowspan="2"><a id="presentedURL4" rel="" href=""><img id="presentedIMG4" class="image-model" src="" alt="" data-hires-status="pending"> </a></td>
+        <th style="width: 70%;">Crispy Fries - $9</th>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td>a HUGE tray of crisp Idaho Potato Fries seasoned lightly with cajun spice and served with tangy fry sauce</td>
+      </tr>
+
+      <tr style="vertical-align: top; padding-top: 10px;">
+        <td style="width: 30%;" rowspan="2"><a id="presentedURL5" rel="" href=""><img id="presentedIMG5" class="image-model" src="" alt="" data-hires-status="pending"> </a></td>
+        <th style="width: 70%;">Dinner Salad - $11</th>
+      </tr>
+      <tr style="vertical-align: top;">
+        <td>Fresh romaine lettuce topped with cucumber, cherry tomato halves, and Carrots with your choice of dressing</td>
+      </tr>
+    </table>
+
+
+    <h2 id="Entrees" style=font-family:arial,sans-serif;>Entrees</h2>
+    <table style="width:100%;" >
+    <tr style="vertical-align: top; padding-top: 10px;">
+      <td style="width: 30%;" rowspan="2"><a id="presentedURL" rel="" href=""><img id="presentedIMG" class="image-model" src="" alt="" data-hires-status="pending"> </a></td>
+      <th style="width: 70%;">Spaghetti & Meatballs - $18</th>
+    </tr>
+    <tr style="vertical-align: top;">
+      <td>Tender juicy meatballs (50% beef, 50% Pork) in a homemade marianara sauce served over a bed of spaghetti</td>
+    </tr>
+ 
+    <tr style="vertical-align: top;">
+      <td style="width: 30%;" rowspan="2"><a id="presentedURL2" rel="" href=""><img id="presentedIMG2" class="image-model" src="" alt="" data-hires-status="pending"> </a></td>
+      <th style="width: 70%;">Spicy Chicken Sandwich - $12</th>
+    </tr>
+    <tr style="vertical-align: top;">
+      <td>Hand breaded organic chicken breast, dipped in Frank's Red Hot Buffalo Sauce, topped with a slice of sharp cheddar cheese, and served on a brioche sesame bun with a side of seasoned fires</td>
+    </tr>
+
+    <tr style="vertical-align: top;padding-top: 10px;">
+      <td style="width: 30%;" rowspan="2"><a id="presentedURL3" rel="" href=""><img id="presentedIMG3" class="image-model" src="" alt="" data-hires-status="pending"> </a></td>
+      <th style="width: 70%;">4 Cheese Tortellini - $15</th>
+    </tr>
+    <tr>
+      <td>Freshly prepared tortellini filled  with a blend of 4 italian cheeses, and tossed in a flavorful pesto sauce</td>
+    </tr>
+
+    </table>
+    
+    
+
+    <h2 id="Sides" style=font-family:arial,sans-serif;>Sides</h2>
+
+    <h2 id="Drinks" style=font-family:arial,sans-serif;>Drinks</h2>
+
+    <h4 id="presentedTITLE"></h4>
+    <a id="presentedURL" rel="" href=""><img id="presentedIMG" class="image-model" src="" alt="" data-hires-status="pending"> </a>
+
+    <!--
+    <h3>Click Image below for iPhone/iPad</h3>
+    <a id="iosurl" rel="ar" href="https://armenu.blob.core.windows.net/models/chicken2.usdz"><img id="iosthumbnail" class="image-model" src="https://armenu.blob.core.windows.net/models/Chicken2Thumb.png" alt="" data-hires-status="pending"></a>
+  
+    <h3>Click Image below for Android</h3>
+    <a id="androidurl" href="intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/pretzel.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;"><img class="image-model" src="https://armenu.blob.core.windows.net/models/Chicken2Thumb.png">Pretzel</a>
+   
+  document.getElementById("presentedTITLE").innerHTML = "Your user agent is " + agent + ": " + deviceType;
+  
+  -->
+
   </main>
+
+  <p id="demo"></p>
+
+<script>
+  document.getElementById("demo").innerHTML = "User-agent:<br>" + agent;
+
+  let deviceagent = navigator.platform;
+
+  var presentedLINE = document.getElementById("presentedURL");
+  var presentedIMG = document.getElementById("presentedIMG");
+  var presetedHEADER = document.getElementById("presentedTITLE");
+
+  var presentedLINE2 = document.getElementById("presentedURL2");
+  var presentedIMG2 = document.getElementById("presentedIMG2");
+  var presetedHEADER2 = document.getElementById("presentedTITLE2");
+
+  var presentedLINE3 = document.getElementById("presentedURL3");
+  var presentedIMG3 = document.getElementById("presentedIMG3");
+  var presetedHEADER3 = document.getElementById("presentedTITLE3");
+
+  var presentedLINE4 = document.getElementById("presentedURL4");
+  var presentedIMG4 = document.getElementById("presentedIMG4");
+  var presetedHEADER4 = document.getElementById("presentedTITLE4");
+
+  var presentedLINE5 = document.getElementById("presentedURL5");
+  var presentedIMG5 = document.getElementById("presentedIMG5");
+  var presetedHEADER5 = document.getElementById("presentedTITLE5");
+ 
+  if (deviceagent == "iPhone") 
+  {
+    deviceType = "Apple iPhone IOS Platform";
+    
+    presentedLINE.rel = "ar";
+    presentedLINE.href = "https://armenu.blob.core.windows.net/models/meatballs.usdz";
+    presentedIMG.src = "https://armenu.blob.core.windows.net/images/Spaghetti.png";
+
+    presentedLINE2.rel = "ar";
+    presentedLINE2.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG2.src = "https://armenu.blob.core.windows.net/images/ChickenSando.png";
+
+    presentedLINE3.rel = "ar";
+    presentedLINE3.href = "https://armenu.blob.core.windows.net/models/Tortallini.usdz";
+    presentedIMG3.src = "https://armenu.blob.core.windows.net/images/Tortellini.png";
+
+    presentedLINE4.rel = "ar";
+    presentedLINE4.href = "https://armenu.blob.core.windows.net/models/Fries2.reality";
+    presentedIMG4.src = "https://armenu.blob.core.windows.net/images/Fries.png";
+
+    presentedLINE5.rel = "ar";
+    presentedLINE5.href = "https://armenu.blob.core.windows.net/models/joshsalad.usdz";
+    presentedIMG5.src = "https://armenu.blob.core.windows.net/images/Salad.png";
+  }
+  
+  else if (deviceagent == "iPad") 
+  {
+    deviceType = "Apple iPad iPadOS Platform";
+    
+    presentedLINE.rel = "ar";
+    presentedLINE.href = "https://armenu.blob.core.windows.net/models/meatballs.usdz";
+    presentedIMG.src = "https://armenu.blob.core.windows.net/images/Spaghetti.png";
+
+    presentedLINE2.rel = "ar";
+    presentedLINE2.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG2.src = "https://armenu.blob.core.windows.net/images/ChickenSando.png";
+
+    presentedLINE3.rel = "ar";
+    presentedLINE3.href = "https://armenu.blob.core.windows.net/models/Tortallini.usdz";
+    presentedIMG3.src = "https://armenu.blob.core.windows.net/images/Tortellini.png";
+
+    presentedLINE4.rel = "ar";
+    presentedLINE4.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG4.src = "https://armenu.blob.core.windows.net/images/Fries.png";
+
+    presentedLINE5.rel = "ar";
+    presentedLINE5.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG5.src = "https://armenu.blob.core.windows.net/images/Salad.png";
+  
+  } 
+  
+  else if (deviceagent == "Linux aarch64") 
+  {
+    deviceType = "Android Device";
+    
+    presentedLINE.rel = "ar";
+    presentedLINE.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/MeatBalls.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    presentedIMG.src = "https://armenu.blob.core.windows.net/images/Spaghetti.png";
+
+    presentedLINE2.rel = "ar";
+    presentedLINE2.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/ChickenSando.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    presentedIMG2.src = "https://armenu.blob.core.windows.net/images/ChickenSando.png";
+
+    presentedLINE3.rel = "ar";
+    presentedLINE3.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/Tortallini.glb&title=Tortellini&sound=https://armenu.blob.core.windows.net/audio/Tortellini.mp3#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    presentedIMG3.src = "https://armenu.blob.core.windows.net/images/Tortellini.png";
+
+    presentedLINE4.rel = "ar";
+    presentedLINE4.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/pretzel.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    presentedIMG4.src = "https://armenu.blob.core.windows.net/images/Fries.png";
+
+    presentedLINE5.rel = "ar";
+    presentedLINE5.href = "intent://arvr.google.com/scene-viewer/1.0?file=https://armenu.blob.core.windows.net/models/pretzel.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;";
+    presentedIMG5.src = "https://armenu.blob.core.windows.net/images/Salad.png";
+
+  } 
+  
+  else 
+  {
+    deviceType = "Undefined device type";
+    
+    presentedLINE.rel = "ar";
+    presentedLINE.href = "https://armenu.blob.core.windows.net/models/meatballs.usdz";
+    presentedIMG.src = "https://armenu.blob.core.windows.net/images/Spaghetti.png";
+
+    presentedLINE2.rel = "ar";
+    presentedLINE2.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG2.src = "https://armenu.blob.core.windows.net/images/ChickenSando.png";
+
+    presentedLINE3.rel = "ar";
+    presentedLINE3.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG3.src = "https://armenu.blob.core.windows.net/images/Tortellini.png";
+
+    presentedLINE4.rel = "ar";
+    presentedLINE4.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG4.src = "https://armenu.blob.core.windows.net/images/Fries.png";
+
+    presentedLINE5.rel = "ar";
+    presentedLINE5.href = "https://armenu.blob.core.windows.net/models/chicken2.usdz";
+    presentedIMG5.src = "https://armenu.blob.core.windows.net/images/Salad.png";
+  }
+</script>
+
 </body>
 
 </html>
